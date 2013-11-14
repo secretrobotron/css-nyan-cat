@@ -38,8 +38,8 @@ a {
 
 #toastBody {
     background-color:#fad695;
-	width:100px;
-	height: 70px;
+	width: 500px;
+	height: 350px;
 	border: solid #000 5px;
 	border-radius: 15px;
 	padding: 2px;
@@ -49,15 +49,24 @@ a {
     -webkit-animation: toastBody 0.8s linear 0s infinite;
 }
 
-#toastBody > div {
-	width:100px;
-	height:70px;
+.dotContainer {
 	border-radius: 30px;
 	background-color: #fc9dff;
 	display:block;
-	color: #da3eb9;
 	font-size: 40px;
 	line-height: 10px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+}
+
+.dotContainer .toastDot {
+    width: 5px;
+    height: 5px;
+    background-color: #da3eb9;
+    position: absolute;
 }
 
 /* -- head -- */
@@ -73,7 +82,7 @@ a {
     99.99% { top: -10px; left: -5px;}
     100% { top: -15px; left: 0;}
 }
- 
+
 @-webkit-keyframes wholeHead {
     0% { top: -15px; left: 0;}
     24.99% { top: -15px; left: 0;}
@@ -86,30 +95,40 @@ a {
     100% { top: -15px; left: 0;}
 }
 
-#wholeHead{
-    position:absolute;
-    top: -15px;
+#wholeHead {
+    position: absolute;
+    top: -65px;
+    left: 350px;
+    width: 400px;
+    height: 300px;
+    z-index: 50;
+}
+
+#wholeHead img {
+    position: absolute;
+    width: 350px;
     -moz-animation: wholeHead 0.4s linear 0s infinite;
     -webkit-animation: wholeHead 0.4s linear 0s infinite;
 }
+
 #mainHead {
-	width: 80px;
-	height: 35px;
+	width: 400px;
+	height: 175px;
 	border-bottom-right-radius: 15px;
 	border-bottom-left-radius: 15px;
 	position:absolute;
 	z-index: 20;
 	top: 48px;
-	left: 60px;
+	left: 410px;
 }
 
 .ear {
-	width:  30px;
-    height: 20px;
+	width:  190px;
+    height: 80px;
     position: absolute;
     z-index: 21;
-    left: 65px;
-    top: 28px;
+    left: 415px;
+    top: -30px;
     border-bottom: none;
     border-top-right-radius: 25px;
 }
@@ -117,45 +136,45 @@ a {
 .rightEar {
     border-top-right-radius: 0;
     border-top-left-radius: 25px;
-    left: 106px;
+    left: 610px;
 }
 
 .eye {
-    width: 5px;
-    height:5px;
+    width: 15px;
+    height: 15px;
     background-color: #fff;
     position: absolute;
-    top:4px;
-    left: 17px;
+    top: 4px;
+    left: 67px;
     z-index: 22;
-    border-right: 5px solid #000;
-    border-bottom: 5px solid #000;
+    border-right: 20px solid #000;
+    border-bottom: 20px solid #000;
 }
 
 .rightEye {
-    left: 56px;
+    left: 276px;
 }
 
 .nose {
-    width:5px;
-    height: 5px;
+    width: 25px;
+    height: 25px;
     background-color:#000;
     position:absolute;
-    top:9px;
-    left: 45px;
+    top: 40px;
+    left: 215px;
 }
 
 .chick {
-    width: 10px;
-    height: 10px;
+    width: 50px;
+    height: 50px;
     background-color: #f7a4a3;
     position: absolute;
-    top: 15px;
-    left: 5px;
+    top: 50px;
+    left: 20px;
 }
 
 .rightChick {
-    left: 70px;
+    left: 330px;
 }
 
 .mouth {
@@ -163,10 +182,10 @@ a {
     -moz-transform: scale(2, 0.7) rotate(-90deg);
     -webkit-transform: scale(2, 0.7) rotate(-90deg);
     font-family: Arial;
-    font-size: 25px;
+    font-size: 105px;
     font-weight: bold;
-    top:9px;
-    left:37px;
+    top: 50px;
+    left: 195px;
     color: #000;
 }
 
@@ -295,36 +314,36 @@ a {
 
 #allYourLegAreBelongToUs {
     position: absolute;
-    top: 10px;
     -moz-animation: letsDanceBeeAch 0.2s linear 0s infinite;
     -webkit-animation: letsDanceBeeAch 0.2s linear 0s infinite;
+    z-index: 18;
 }
 .leg {
-    width:10px;
-    height:20px;
+    width:90px;
+    height:140px;
     position:absolute;
-    z-index: 18;
-    top: 64px;
-    left:5px;
+    left: 5px;
+    top: 280px;
 }
 
 .back {
+    left: 35px;
     -moz-transform: rotate(40deg);
     -webkit-transform: rotate(40deg);
 }
 
 .leftBack {
-    left: 35px;
+    left: 105px;
 }
 
 .front {
     -moz-transform: rotate(-40deg);
     -webkit-transform: rotate(-40deg);
-    left:100px;
+    left: 370px;
 }
 
 .leftFront {
-    left: 70px;
+    left: 300px;
 }
 
 /* -- RAINBOW -- */
@@ -362,8 +381,8 @@ a {
 
 .rainbow {
     position:absolute;
-    width:45px;
-    height:90px;
+    width:145px;
+    height:350px;
     background: -moz-linear-gradient(top, #d91a12 15%, #e13300 15%, #ff7f14 16%, #f2ab03 32%, #ebc000 32%, #fade00 33%, #efff03 48%, #56fc02 49%, #52ff01 66%, #4ade7e 67%, #3baaf2 67%, #3baaf2 84%, #7337f7 84%, #6b40f2 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(15%,#d91a12), color-stop(15%,#e13300), color-stop(16%,#ff7f14), color-stop(32%,#f2ab03), color-stop(32%,#ebc000), color-stop(33%,#fade00), color-stop(48%,#efff03), color-stop(49%,#56fc02), color-stop(66%,#52ff01), color-stop(67%,#4ade7e), color-stop(67%,#3baaf2), color-stop(84%,#3baaf2), color-stop(84%,#7337f7), color-stop(100%,#6b40f2)); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(top, #d91a12 15%,#e13300 15%,#ff7f14 16%,#f2ab03 32%,#ebc000 32%,#fade00 33%,#efff03 48%,#56fc02 49%,#52ff01 66%,#4ade7e 67%,#3baaf2 67%,#3baaf2 84%,#7337f7 84%,#6b40f2 100%); /* Chrome10+,Safari5.1+ */
@@ -373,18 +392,18 @@ a {
     z-index: 15;
 }
 .r2 {
-    left: -85px;
+    left: -185px;
     top: 5px;
     -moz-animation-name: rainbow2;
     -webkit-animation-name: rainbow2;
 }
 
 .r3 {
-    left: -130px;
+    left: -280px;
 }
 
 .r4 {
-    left: -175px;
+    left: -375px;
     top: 5px;
     -moz-animation-name: rainbow2;
     -webkit-animation-name: rainbow2;
@@ -675,7 +694,7 @@ a {
 
 #nyanCat {
     position:absolute;
-    left:150px;
+    left:350px;
     top: 100px;
 }
 

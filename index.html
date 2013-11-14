@@ -6,26 +6,28 @@
     </head>
 
     <body>
-        <h1>NYAN WIL</h1>
+        <h1>NYAN WIL!</h1>
         <div id="mainContainer">
             <div id="nyanCat">
                 <div id="wholeHead">
-                    <div class="skin ear"></div>
-                    <div class="skin ear rightEar"></div>
-                    <div id="mainHead" class="skin">
-                        <div class="eye"></div>
-                        <div class="eye rightEye"></div>
-                        <div class="nose"></div>
-                        <div class="chick"></div>
-                        <div class="chick rightChick"></div>
-                        <div class="mouth">E</div>
-                    </div>
+                    <img src="wheaton.png">
                 </div>
                 <div id="toastBody">
-                    <div>
-                        &nbsp;  &nbsp; &nbsp;.&nbsp;&nbsp;.&nbsp; &nbsp; &nbsp;..&nbsp;  &nbsp; &nbsp;.&nbsp;.&nbsp; &nbsp; &nbsp;&nbsp&nbsp&nbsp;..&nbsp;  &nbsp; &nbsp;.&nbsp;&nbsp;.
-                    </div>
+                    <div class="dotContainer"></div>
                 </div>
+                <script>
+                    (function () {
+                        var container = document.querySelector('#toastBody .dotContainer');
+                        var toastDot;
+                        for (var i = 0; i < 50; ++i) {
+                            toastDot = document.createElement('div');
+                            toastDot.className = 'toastDot';
+                            toastDot.style.left = (Math.random() * 100) + '%';
+                            toastDot.style.top = (Math.random() * 100) + '%';
+                            container.appendChild(toastDot);
+                        }
+                    })();
+                </script>
                 <div id="wholeTail">
                     <div class="tail skin"></div>
                     <div class="tail middleTail skin"></div>
