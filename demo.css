@@ -435,8 +435,8 @@ a {
 
 #muted-status {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 8px;
+    right: 8px;
     cursor: pointer;
 }
 
@@ -445,4 +445,5 @@ a {
     bottom: 0;
     text-align: center;
     width: 100%;
+    padding: 8px;
 }
