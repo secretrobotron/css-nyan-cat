@@ -74,7 +74,8 @@
         <div id="muted-status"><span>Muted</span> <sup>(Click to toggle music)</sup></div>
         <script>
         (function () {
-            var audio = document.getElementById('audio');
+            var audio = document.getElementById('audio'),
+                nyanCat = document.getElementById('nyanCat');
             audio.muted = true;
 
             audio.addEventListener('ended', function(){
@@ -85,6 +86,16 @@
             window.onclick = function (e) {
                 audio.muted = !audio.muted;
                 document.querySelector('#muted-status > span').innerHTML = audio.muted ? 'Muted' : 'Playing';
+            };
+
+            window.onmousemove = function (e) {
+                var height = window.innerHeight,
+                    width = window.innerWidth,
+                    y = e.pageY || e.clientY + document.body.scrollTop + document.documentElement.scrollTop,
+                    x = e.pageX || e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+
+                nyanCat.style.top = (((y / height) - 0.5) * 0.6 + 0.5) * 100 + '%';
+                nyanCat.style.left = (((x / width) - 0.5) * 0.2 + 0.35) * 100 + '%';
             };
         }());
         </script>
