@@ -454,3 +454,9 @@ a {
     position: absolute;
     top: 370px;
 }
+
+#muted-status {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}

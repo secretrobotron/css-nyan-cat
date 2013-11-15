@@ -68,16 +68,26 @@
                 <div number="8"></div>
             </div>
         </div>
-        <audio loop="loop" src="nyancat.ogg" autoplay="true" id="audio">
+        <audio loop="loop" autoplay="true" id="audio">
+            <source src="nyancat.ogg" type="audio/ogg"/>
+            <source src="nyancat.ogg" type="audio/mp3"/>
+        </audio>
+        <div id="muted-status"><span>Muted</span> <sup>(Click to toggle music)</sup></div>
         <script>
         (function () {
             var audio = document.getElementById('audio');
             audio.muted = true;
+
             audio.addEventListener('ended', function(){
-                this.currentTime = 0;
+                audio.currentTime = 0;
+                audio.play();
             }, false);
+
+            window.onclick = function (e) {
+                audio.muted = !audio.muted;
+                document.querySelector('#muted-status > span').innerHTML = audio.muted ? 'Muted' : 'Playing';
+            };
         }());
         </script>
     </body>
 </html>
- 
