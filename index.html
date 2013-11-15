@@ -95,11 +95,15 @@
                 <div number="8"></div>
             </div>
         </div>
-        <audio loop="loop" src="nyancat.ogg" autoplay="true">
+        <audio loop="loop" src="nyancat.ogg" autoplay="true" id="audio">
         <script>
-            document.getElementsByTagName('audio')[0].addEventListener('ended', function(){
+        (function () {
+            var audio = document.getElementById('audio');
+            audio.muted = true;
+            audio.addEventListener('ended', function(){
                 this.currentTime = 0;
             }, false);
+        }());
         </script>
     </body>
 </html>
