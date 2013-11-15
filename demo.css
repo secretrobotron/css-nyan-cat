@@ -102,6 +102,11 @@ a {
             animation: wholeHead 0.4s linear 0s infinite;
 }
 
+#wholeHead img.sixteen-bit {
+    visibility: hidden;
+}
+
+
 #mainHead {
 	width: 400px;
 	height: 175px;
