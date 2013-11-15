@@ -359,13 +359,13 @@ a {
 }
 
 @-moz-keyframes starMovement1 {
-    0% { top: 80px; left: 600px}
-    100% { top: 80px; left: 0px;}
+    0% { top: 27%; left: 120%}
+    100% { top: 27%; left: 0px;}
 }
 
 @-webkit-keyframes starMovement1 {
-    0% { top: 80px; left: 600px}
-    100% { top: 80px; left: 0px;}
+    0% { top: 27%; left: 120%}
+    100% { top: 27%; left: 0px;}
 }
 
 .starMovement1 {
@@ -374,13 +374,13 @@ a {
 }
 
 @-moz-keyframes starMovement2 {
-    0% { top: -10px; left: 800px}
-    100% { top: -10px; left: -100px;}
+    0% { top: -3.33%; left: 160%}
+    100% { top: -3.33%; left: -20%;}
 }
 
 @-webkit-keyframes starMovement2{
-    0% { top: -10px; left: 800px}
-    100% { top: -10px; left: -100px;}
+    0% { top: -3.33%; left: 160%}
+    100% { top: -3.33%; left: -20%;}
 }
 
 .starMovement2 {
@@ -389,13 +389,13 @@ a {
 }
 
 @-moz-keyframes starMovement3 {
-    0% { top: 270px; left: 728px}
-    100% { top: 270px; left: -172px;}
+    0% { top: 90%; left: 145.6%}
+    100% { top: 90%; left: -34.4%;}
 }
 
 @-webkit-keyframes starMovement3 {
-    0% { top: 270px; left: 728px}
-    100% { top: 270px; left: -172px;}
+    0% { top: 90%; left: 145.6%}
+    100% { top: 90%; left: -34.4%;}
 }
 
 .starMovement3 {
@@ -404,13 +404,13 @@ a {
 }
 
 @-moz-keyframes starMovement4 {
-    0% { top: 160px; left: 2300px}
-    100% { top: 160px; left: -100px;}
+    0% { top: 53.3%; left: 460%}
+    100% { top: 53.3%; left: -20%;}
 }
 
 @-webkit-keyframes starMovement4 {
-    0% { top: 160px; left: 2300px}
-    100% { top: 160px; left: -100px;}
+    0% { top: 53.3%; left: 460%}
+    100% { top: 53.3%; left: -20%;}
 }
 
 .starMovement4 {
@@ -419,13 +419,13 @@ a {
 }
 
 @-moz-keyframes starMovement5 {
-    0% { top: 130px; left: 1100px}
-    100% { top: 130px; left: -100px;}
+    0% { top: 43.3%; left: 220%}
+    100% { top: 43.3%; left: -20%;}
 }
 
 @-webkit-keyframes starMovement5 {
-    0% { top: 130px; left: 1100px}
-    100% { top: 130px; left: -100px;}
+    0% { top: 43.3%; left: 220%}
+    100% { top: 43.3%; left: -20%;}
 }
 
 .starMovement5 {
