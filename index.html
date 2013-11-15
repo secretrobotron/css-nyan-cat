@@ -20,13 +20,16 @@
                 </div>
                 <script>
                     (function() {
-                        var images = [document.querySelector('#wholeHead img.sixteen-bit'), document.querySelector('#wholeHead img.normal')];
+                        var images = [
+                                document.querySelector('#wholeHead img.normal'),
+                                document.querySelector('#wholeHead img.sixteen-bit')
+                            ],
+                            currentImage = 0;
                         function swap () {
-                            var i = Math.floor(Math.random() * 2);
-                            var n = 10 + Math.round(Math.random() * 10);
-                            images[(i + 1) % 2].style.visibility = 'hidden';
-                            images[i].style.visibility = 'visible';
-                            setTimeout(swap, n);
+                            images[currentImage].style.visibility = 'hidden';
+                            currentImage = (currentImage + 1) % 2;
+                            images[currentImage].style.visibility = 'visible';
+                            setTimeout(swap, 3000 * currentImage + 400 + (Math.random() * 100 - 50));
                         }
                         swap();
                     })();
